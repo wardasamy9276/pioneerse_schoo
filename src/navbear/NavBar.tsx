@@ -1,6 +1,6 @@
 import { useState } from "react";
 // import Lang from "../components/Lang";
-import imgloogo from "../assets/imgLogo/header-logo.png";
+// import loogo from "src/assets/imgLogo/logo.png";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -24,7 +24,8 @@ function Navbar() {
           {/* Logo */}
           <Link to="/Pages">
             <img
-              src={imgloogo}
+              // src={loogo}
+              src="src/assets/imgLogo/logos.png"
               alt="logo"
               className="w-28 md:w-36 object-contain"
             />
