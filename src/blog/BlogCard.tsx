@@ -1,11 +1,15 @@
 import { Button } from "@/components/ui/button";
 
-// ✅ استيراد الصور
-import imgAwael from "@/assets/schoolimg/Al-Awael_Private_Schools.webp";
-import imgNoor from "@/assets/schoolimg/نور_الايمان_العالميه.webp";
+const imgLMS = new URL(
+  "@/assets/systems/learning-management-system.webp",
+  import.meta.url
+).href;
+const imgShams = new URL(
+  "@/assets/schoolimg/el-shams-private-school.webp",
+  import.meta.url
+).href;
 
 export default function Blog() {
-  // 🔹 الداتا كلها في نفس الصفحة
   const blogData = [
     {
       id: 1,
@@ -14,7 +18,7 @@ export default function Blog() {
       author: "warda samy",
       excerpt:
         "التواصل الفعال بين المدرسة وأولياء الأمور هو عنصر حيوي لنجاح العملية التعليمية...",
-      img: imgAwael,
+      img: imge,
     },
     {
       id: 2,
@@ -24,7 +28,7 @@ export default function Blog() {
       author: "warda samy",
       excerpt:
         "في عالم يتزايد فيه تعقيد العمليات الإدارية والتعليمية، أصبحت الحاجة إلى أنظمة إدارة متكاملة...",
-      img: imgNoor,
+      img: imgs,
     },
     {
       id: 3,
@@ -34,7 +38,7 @@ export default function Blog() {
       author: "warda samy",
       excerpt:
         "التحول الرقمي في المدارس يقلل الأخطاء ويوفر الوقت والجهد على الإدارة...",
-      img: imgNoor,
+      img: imge,
     },
     {
       id: 4,
@@ -43,7 +47,7 @@ export default function Blog() {
       author: "warda samy",
       excerpt:
         "بوابات الطلاب الرقمية أصبحت عنصرًا أساسيًا لزيادة التفاعل والانضباط...",
-      img: imgAwael,
+      img: imgs,
     },
     {
       id: 5,
@@ -52,7 +56,7 @@ export default function Blog() {
       author: "warda samy",
       excerpt:
         "الذكاء الاصطناعي يساعد المدارس على تحليل الأداء واتخاذ قرارات ذكية...",
-      img: imgNoor,
+      img: imge,
     },
     {
       id: 6,
@@ -61,7 +65,7 @@ export default function Blog() {
       author: "warda samy",
       excerpt:
         "الإدارة الذكية تقلل الأعباء الورقية وتزيد من كفاءة العمل داخل المدرسة...",
-      img: imgAwael,
+      img: imgs,
     },
     {
       id: 7,
@@ -70,7 +74,7 @@ export default function Blog() {
       author: "warda samy",
       excerpt:
         "الحلول السحابية توفر مرونة عالية وسهولة وصول للبيانات في أي وقت...",
-      img: imgNoor,
+      img: imge,
     },
     {
       id: 8,
@@ -79,7 +83,7 @@ export default function Blog() {
       author: "warda samy",
       excerpt:
         "الاعتماد على الإكسيل يسبب أخطاء متكررة مقارنة بالأنظمة الحديثة...",
-      img: imgAwael,
+      img: imgs,
     },
     {
       id: 9,
@@ -87,7 +91,7 @@ export default function Blog() {
       date: "2026-01-16",
       author: "warda samy",
       excerpt: "حماية بيانات الطلاب والمعلمين أصبحت ضرورة لا غنى عنها...",
-      img: imgNoor,
+      img: imge,
     },
     {
       id: 10,
@@ -95,7 +99,7 @@ export default function Blog() {
       date: "2026-01-14",
       author: "warda samy",
       excerpt: "تحليل النتائج والتقارير الذكية يدعم تحسين مستوى الطلاب...",
-      img: imgAwael,
+      img: imgs,
     },
     {
       id: 11,
@@ -103,7 +107,7 @@ export default function Blog() {
       date: "2026-01-12",
       author: "warda samy",
       excerpt: "الأنظمة الرقمية تسهّل التحصيل وتقلل الأخطاء المالية...",
-      img: imgNoor,
+      img: imge,
     },
     {
       id: 12,
@@ -111,7 +115,7 @@ export default function Blog() {
       date: "2026-01-10",
       author: "warda samy",
       excerpt: "التقارير الفورية تساعد الإدارة على رؤية شاملة ودقيقة...",
-      img: imgAwael,
+      img: imgs,
     },
     {
       id: 13,
@@ -119,7 +123,7 @@ export default function Blog() {
       date: "2026-01-08",
       author: "warda samy",
       excerpt: "بوابة ولي الأمر تعزز الشفافية والثقة بين المدرسة والأسرة...",
-      img: imgNoor,
+      img: imge,
     },
     {
       id: 14,
@@ -128,7 +132,7 @@ export default function Blog() {
       author: "warda samy",
       excerpt:
         "الأدوات الرقمية تساعد المعلم على التركيز على التعليم لا الإدارة...",
-      img: imgAwael,
+      img: imgs,
     },
     {
       id: 15,
@@ -136,7 +140,7 @@ export default function Blog() {
       date: "2026-01-04",
       author: "warda samy",
       excerpt: "المدارس الرقمية أكثر قدرة على المنافسة وتحقيق الجودة...",
-      img: imgNoor,
+      img: imge,
     },
     {
       id: 16,
@@ -144,7 +148,7 @@ export default function Blog() {
       date: "2026-01-02",
       author: "warda samy",
       excerpt: "جدولة الحصص إلكترونيًا توفر وقتًا كبيرًا وتقلل التعارض...",
-      img: imgAwael,
+      img: imgs,
     },
     {
       id: 17,
@@ -152,7 +156,7 @@ export default function Blog() {
       date: "2025-12-30",
       author: "warda samy",
       excerpt: "الكنترول الإلكتروني يقلل الأخطاء ويرفع دقة النتائج...",
-      img: imgNoor,
+      img: imge,
     },
     {
       id: 18,
@@ -160,7 +164,7 @@ export default function Blog() {
       date: "2025-12-28",
       author: "warda samy",
       excerpt: "تنظيم بيانات الطلاب يسهل المتابعة ويزيد الكفاءة...",
-      img: imgAwael,
+      img: imgs,
     },
     {
       id: 19,
@@ -168,7 +172,7 @@ export default function Blog() {
       date: "2025-12-26",
       author: "warda samy",
       excerpt: "الطالب يصبح أكثر تفاعلًا عند استخدام أدوات تعليمية حديثة...",
-      img: imgNoor,
+      img: imge,
     },
     {
       id: 20,
@@ -176,7 +180,7 @@ export default function Blog() {
       date: "2025-12-24",
       author: "warda samy",
       excerpt: "المدارس الذكية هي مستقبل التعليم الحديث...",
-      img: imgAwael,
+      img: imgs,
     },
   ];
 
