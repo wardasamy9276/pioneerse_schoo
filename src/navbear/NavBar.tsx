@@ -25,7 +25,14 @@ function Navbar() {
       <div className="container mx-auto px-4 md:px-10 py-3">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/Pages">
+          {/* <Link to="/Pages">
+            <img
+              src={logo}
+              alt="logo"
+              className="w-28 md:w-36 object-contain"
+            />
+          </Link> */}
+          <Link to="/pages">
             <img
               src={logo}
               alt="logo"

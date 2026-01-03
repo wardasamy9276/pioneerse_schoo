@@ -1,6 +1,6 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 import "./index.css";
 
@@ -11,11 +11,17 @@ import Buttons from "./Buttons";
 
 createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <HashRouter>
+    <BrowserRouter basename="/pioneerse_schoo">
       <NavBar />
       <App />
       <Footer />
       <Buttons />
-    </HashRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
+
+// import { BrowserRouter } from "react-router-dom";
+
+// <BrowserRouter basename="/pioneerse_schoo">
+//   <App />
+// </BrowserRouter>
