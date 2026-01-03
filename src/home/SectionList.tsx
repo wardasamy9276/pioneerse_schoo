@@ -1,7 +1,7 @@
 import platformData from "./components/Data Structure";
 import { Button } from "@/components/ui/button";
 import Icon from "../home/components/iconsList";
-
+import imgse from "@/assets/imgLogo/school.webp";
 import { Link } from "react-router-dom";
 export default function SectionList() {
   return (
@@ -45,11 +45,7 @@ export default function SectionList() {
       </div>
 
       {/* الصورة */}
-      <img
-        src="src/assets/imgLogo/school.webp"
-        alt="School"
-        className="w-full rounded-xl"
-      />
+      <img src={imgse} alt="School" className="w-full rounded-xl" />
 
       {/* الأقسام */}
       {platformData.map((section, idx) => (

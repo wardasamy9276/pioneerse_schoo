@@ -12,13 +12,9 @@ import SchoolSplitSection from "./SchoolSplitSection";
 import LoginInfoSection from "./LoginInfoSection";
 import SchoolTimeline from "./SchoolTimeline";
 import ConfirmationCard from "./ConfirmationCardProps";
-// import FAQPages from "./FAQPages";
+import SchoolsPage from "./SchoolsPage";
 
-import { useTranslation } from "react-i18next";
-
-// const { t } = useTranslation();
 function Home() {
-  const { t } = useTranslation();
   return (
     <div>
       <Hero />
@@ -26,16 +22,13 @@ function Home() {
       <SchoolWhyUs />
       <SchoolSlider />
       <SectionList />
-
       <SchoolStats />
-
       <FAQComponent />
       <SchoolCard />
       <SchoolTimeline />
       <SchoolSplitSection />
+      <SchoolsPage />
       <LoginInfoSection />
-
-      {/*SchoolPrograms*/}
       <div>
         <ConfirmationCard />
         <SchoolPrograms />

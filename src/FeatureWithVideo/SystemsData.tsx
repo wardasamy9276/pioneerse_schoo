@@ -1,24 +1,29 @@
+// ✅ استيراد الصور صح
+import imgLMS from "@/assets/systems/learning-management-system.webp";
+import imgSMS from "@/assets/systems/school-management-system.webp";
+import imgSIS from "@/assets/systems/student-information-system.webp";
+
 const systemsData = [
   {
     id: 1,
     title: "نظام إدارة التعلم LMS",
     description:
       "يوفر Pioneers E-School نظام متكامل للتعلم الإلكتروني عن بعد من خلال التوصيل والتشغيل لإنشاء بيئة فصل دراسي رقمية.",
-    image: "src/assets/systems/learning-management-system.webp",
+    image: imgLMS,
   },
   {
     id: 2,
     title: "نظام معلومات الطلاب SIS",
     description:
       "نظام معلومات الطلاب (SIS) يساعد المدارس على تنسيق وإدارة المهام الإدارية والتعليمية بين أعضاء هيئة التدريس والإدارة.",
-    image: "src/assets/systems/school-management-system.webp",
+    image: imgSMS,
   },
   {
     id: 3,
     title: "نظام إدارة المدرسة SMS",
     description:
       "Pioneers E-School SMS نظام إداري متكامل يحتوي على كافة الأدوات اللازمة لإدارة المدارس الخاصة والدولية.",
-    image: "src/assets/systems/student-information-system.webp",
+    image: imgSIS,
   },
 ];
 

@@ -17,6 +17,14 @@ import Pages from "./FeatureWithVideo/Pages";
 import FAQPages from "./home/FAQPages";
 import ConfirmationCard from "./home/ConfirmationCardProps";
 import Customers from "./Category/customers";
+import SchoolsPage from "./home/SchoolsPage";
+import NileInternational from "../NileInternational/NileInternational";
+import TrialOffer from "../TrialOffer/TrialOffer";
+import CairoModernSchool from "../NileInternational/CairoModernSchool copy";
+import AlRowadSchool from "../NileInternational/AlRowadSchool";
+import FutureSchool from "../NileInternational/FutureSchool";
+
+import AlAmalSchool from "../NileInternational/AlAmalSchool";
 function App() {
   return (
     <>
@@ -37,8 +45,14 @@ function App() {
         <Route path="/pages" element={<Pages />} />
         <Route path="/faqpages" element={<FAQPages />} />
         <Route path="/customers" element={<Customers />} />
-
+        <Route path="/schools" element={<SchoolsPage />} />
         <Route path="/ConfirmationCardProps" element={<ConfirmationCard />} />
+        <Route path="/nileInternational" element={<NileInternational />} />
+        <Route path="/trialOffer" element={<TrialOffer />} />
+        <Route path="/cairoModernSchool" element={<CairoModernSchool />} />
+        <Route path="/alRowadSchool" element={<AlRowadSchool />} />
+        <Route path="/futureSchool" element={<FutureSchool />} />
+        <Route path="/alAmalSchool" element={<AlAmalSchool />} />
       </Routes>
     </>
   );

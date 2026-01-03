@@ -1,8 +1,0 @@
-import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
-import SchoolWhyUs from "../home/SchoolWhyUs";
-import SectionList from "../home/SectionList";
-import { useState } from "react";
-export default function ContactPage() {
-    const [showContact, setShowContact] = useState(false);
-    return (_jsxs("div", { className: "min-h-screen bg-gray-100 flex flex-col items-center p-6", children: [_jsx("h1", { className: "text-3xl font-bold mb-8", children: "\u0645\u0631\u062D\u0628\u0627 \u0628\u0643 \u0641\u064A \u0645\u0648\u0642\u0639\u0646\u0627" }), _jsx("button", { onClick: () => setShowContact(!showContact), className: "bg-cyan-600 text-white px-6 py-3 rounded-2xl hover:bg-cyan-800 transition mb-4", children: "\u0627\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627" }), showContact && (_jsxs("div", { className: "bg-white shadow-lg rounded-2xl p-6 w-full max-w-md \r\n        transition-all duration-300  flex flex-col items-center text-center mb-12", children: [_jsx("h2", { className: "text-2xl font-bold mb-12  p-4", children: "\u062A\u0648\u0627\u0635\u0644 \u0645\u0639\u0646\u0627" }), _jsx("p", { children: "\uD83D\uDCE7 \u0627\u0644\u0628\u0631\u064A\u062F \u0627\u0644\u0625\u0644\u0643\u062A\u0631\u0648\u0646\u064A:wardasamy1996@gmail.com" }), _jsx("p", { children: "\uD83D\uDCDE \u0627\u0644\u0647\u0627\u062A\u0641:01040381999" }), _jsx("p", { children: "\uD83C\uDF10 \u0627\u0644\u0645\u0648\u0642\u0639: www.example.com" }), _jsx("button", { onClick: () => setShowContact(false), className: "mt-4 bg-cyan-700 text-white px-4 py-2 rounded-xl hover:bg-red-800", children: "\u0625\u063A\u0644\u0627\u0642" })] })), _jsx(SchoolWhyUs, {}), _jsx(SectionList, {})] }));
-}

@@ -1,3 +1,5 @@
+import ImgHero from "@/school-about.png";
+
 export default function AboutSystem() {
   const highlights = [
     "نظام إدارة المدرسة متكامل وسهل الاستخدام",
@@ -33,7 +35,7 @@ export default function AboutSystem() {
         {/* الصورة */}
         <div className="flex justify-center">
           <img
-            src="/school-about.png"
+            src={ImgHero}
             alt="About School System"
             className="rounded-2xl shadow-lg max-w-full"
           />

@@ -1,3 +1,4 @@
+import Imgs from "@/assets/imgLogo/school.webp";
 export default function SchoolSplitSection() {
   const points = [
     "إدارة مدرسية إلكترونية متكاملة",
@@ -8,7 +9,7 @@ export default function SchoolSplitSection() {
   ];
 
   return (
-    <section className="py-10 bg-[#0f172a] text-white w-full" dir="rtl">
+    <section className="py-10 bg-[#0f172a] p-12 text-white w-full" dir="rtl">
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* النص */}
         <div className="space-y-6 text-right">
@@ -31,7 +32,7 @@ export default function SchoolSplitSection() {
         {/* الصورة */}
         <div className="flex justify-center">
           <img
-            src="src/assets/imgLogo/school.webp"
+            src={Imgs}
             alt="School System"
             className="rounded-2xl shadow-lg max-w-full"
           />

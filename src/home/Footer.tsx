@@ -1,3 +1,5 @@
+import imgs from "@/assets/imgLogo/school.webp";
+
 import {
   FaFacebookF,
   FaTelegramPlane,
@@ -40,11 +42,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between space-y-6 md:space-y-0">
         {/* شعار المدرسة */}
         <div className="flex flex-col items-center md:items-start mb-6 md:mb-0">
-          <img
-            src="src/assets/imgLogo/school.webp"
-            alt="School Logo"
-            className="w-32 mb-4"
-          />
+          <img src={imgs} alt="School Logo" className="w-32 mb-4" />
           <p className="text-gray-300 text-sm">
             © 2026 جميع الحقوق محفوظة للمدرسة
           </p>

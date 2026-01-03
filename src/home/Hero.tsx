@@ -1,11 +1,6 @@
 import Button from "./components/Button";
-import img from "../assets/img/imge.png";
-
-import { useTranslation } from "react-i18next";
-
-// // const { t } = useTranslation();
+import img from "@/assets/img/imge.png";
 export default function Hero() {
-  const { t } = useTranslation();
   return (
     <div
       className="text-center px-4 py-6 sm:px-6 sm:py-8 md:px-12 md:py-10 

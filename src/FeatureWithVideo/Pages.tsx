@@ -1,12 +1,15 @@
-import FeaturesPage from "../FeatureWithVideo/FeaturesPage";
 import FeatureWithVideo from "../FeatureWithVideo/FeatureWithVideo";
-import SystemsData from "../FeatureWithVideo/systemsData";
+
+import FeaturesPage from "../FeatureWithVideo/FeaturesPage";
+
+import SystemsData from "../FeatureWithVideo/SystemsData";
 
 function PageFeatures() {
   return (
     <div>
-      <FeaturesPage />
       <FeatureWithVideo />
+      <FeaturesPage />
+
       <SystemsData />
     </div>
   );

@@ -2,7 +2,7 @@
 import HeroSection from "./HeroSection";
 import { sections } from "../home/components/data";
 import { Button } from "@/components/ui/button";
-import img from "../assets/img/image.png";
+import img from "@/assets/img/image.png";
 
 import { Link } from "react-router-dom";
 

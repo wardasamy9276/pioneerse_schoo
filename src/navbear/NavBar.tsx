@@ -1,6 +1,7 @@
 import { useState } from "react";
-// import Lang from "../components/Lang";
-// import loogo from "src/assets/imgLogo/logo.png";
+
+import logo from "@/assets/imgLogo/logos.png";
+
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -12,7 +13,9 @@ function Navbar() {
     { id: 2, label: "من نحن", to: "/about" },
     { id: 3, label: "المميزات", to: "/features" },
     { id: 4, label: "المدونة", to: "/blog" },
+
     { id: 5, label: "عملاؤنا", to: "/clients" },
+
     { id: 6, label: "تواصل معنا", to: "/highlights" },
     // { id: 7, label: "لوحة التحكم", to: "/dashboard" },
   ];
@@ -24,8 +27,7 @@ function Navbar() {
           {/* Logo */}
           <Link to="/Pages">
             <img
-              // src={loogo}
-              src="src/assets/imgLogo/logos.png"
+              src={logo}
               alt="logo"
               className="w-28 md:w-36 object-contain"
             />
