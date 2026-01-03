@@ -1,4 +1,3 @@
-// ✅ استيراد الصور صح
 import imgLMS from "@/assets/systems/learning-management-system.webp";
 import imgSMS from "@/assets/systems/school-management-system.webp";
 import imgSIS from "@/assets/systems/student-information-system.webp";
@@ -16,14 +15,14 @@ const systemsData = [
     title: "نظام معلومات الطلاب SIS",
     description:
       "نظام معلومات الطلاب (SIS) يساعد المدارس على تنسيق وإدارة المهام الإدارية والتعليمية بين أعضاء هيئة التدريس والإدارة.",
-    image: imgSMS,
+    image: imgSIS, // ✅ صح
   },
   {
     id: 3,
     title: "نظام إدارة المدرسة SMS",
     description:
       "Pioneers E-School SMS نظام إداري متكامل يحتوي على كافة الأدوات اللازمة لإدارة المدارس الخاصة والدولية.",
-    image: imgSIS,
+    image: imgSMS, // ✅ صح
   },
 ];
 
